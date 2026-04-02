@@ -342,9 +342,6 @@ function App() {
                     <p className="text-white/80 font-body text-sm mb-6">A stunning castle-like venue in New Jersey, perfect for grand celebrations.</p>
                     <button className="border border-white text-white px-6 py-2 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#84001a] transition-colors">VIEW VENUE</button>
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent group-hover:opacity-0 transition-opacity">
-                    <p className="text-white font-sans font-bold tracking-widest uppercase">SHERATON PARSIPPANY</p>
-                  </div>
                 </div>
                 {/* Venue 2 - User Image 2 */}
                 <div className="group relative aspect-[4/5] overflow-hidden bg-zinc-100 card-lift reveal-scale stagger-2">
@@ -358,9 +355,6 @@ function App() {
                     <p className="text-white/80 font-body text-sm mb-6">An iconic destination surrounded by beautiful landscapes and modern amenities.</p>
                     <button className="border border-white text-white px-6 py-2 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#84001a] transition-colors">VIEW VENUE</button>
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent group-hover:opacity-0 transition-opacity">
-                    <p className="text-white font-sans font-bold tracking-widest uppercase">SHERATON GRAND</p>
-                  </div>
                 </div>
                 {/* Venue 3 - User Image 3 */}
                 <div className="group relative aspect-[4/5] overflow-hidden bg-zinc-100 card-lift reveal-scale stagger-3">
@@ -373,9 +367,6 @@ function App() {
                     <h3 className="font-sans font-bold tracking-widest text-white uppercase text-xl mb-2">Sheraton Premiere</h3>
                     <p className="text-white/80 font-body text-sm mb-6">A contemporary venue with expansive grounds for unforgettable events.</p>
                     <button className="border border-white text-white px-6 py-2 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#84001a] transition-colors">VIEW VENUE</button>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent group-hover:opacity-0 transition-opacity">
-                    <p className="text-white font-sans font-bold tracking-widest uppercase">SHERATON PREMIERE</p>
                   </div>
                 </div>
               </div>
