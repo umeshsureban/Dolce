@@ -1,10 +1,5 @@
 /* App-specific styles */
 
-/* Ensure smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Material Icons */
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';

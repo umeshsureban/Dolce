@@ -111,19 +111,19 @@ function App() {
               src="/dolce-logo.png"
             />
             <div className="hidden md:flex gap-10 items-center">
-              <a className="nav-link active font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#84001a] border-b-2 border-[#84001a] pb-1 transition-colors duration-300" href="#">
+              <a className="nav-link active font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#84001a] border-b-2 border-[#84001a] pb-1 transition-colors duration-300" href="#weddings">
                 WEDDINGS
               </a>
-              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#">
+              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#events">
                 EVENTS
               </a>
-              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#">
+              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#venues">
                 VENUES
               </a>
-              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#">
+              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#dining">
                 DINING
               </a>
-              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#">
+              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#contact">
                 CONTACT
               </a>
             </div>
@@ -194,7 +194,7 @@ function App() {
           </section>
 
           {/* Weddings Section */}
-          <section ref={weddingsRef} className="flex flex-col md:flex-row bg-white overflow-hidden">
+          <section id="weddings" ref={weddingsRef} className="flex flex-col md:flex-row bg-white overflow-hidden">
             <div className="w-full md:w-1/2 relative min-h-[600px] img-zoom">
               <img 
                 className="w-full h-full object-cover" 
@@ -272,7 +272,7 @@ function App() {
           </section>
 
           {/* Events Section */}
-          <section ref={eventsRef} className="flex flex-col md:flex-row-reverse bg-white overflow-hidden">
+          <section id="events" ref={eventsRef} className="flex flex-col md:flex-row-reverse bg-white overflow-hidden">
             <div className="w-full md:w-1/2 relative min-h-[600px] img-zoom">
               <img 
                 className="w-full h-full object-cover" 
@@ -308,7 +308,7 @@ function App() {
           </section>
 
           {/* Venue Showcase - WITH USER PROVIDED IMAGES */}
-          <section ref={venuesRef} className="py-24 px-8 bg-white">
+          <section id="venues" ref={venuesRef} className="py-24 px-8 bg-white">
             <div className="max-w-7xl mx-auto">
               <h2 className="font-sans font-bold tracking-[0.2em] text-center uppercase text-xl mb-16 text-[#1b1b1e] reveal">
                 OUR ICONIC VENUES
@@ -327,7 +327,7 @@ function App() {
                     <button className="border border-white text-white px-6 py-2 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#84001a] transition-colors">VIEW VENUE</button>
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent group-hover:opacity-0 transition-opacity">
-                    <p className="text-white font-sans font-bold tracking-widest uppercase">SHERATAN PARSIPPANY</p>
+                    <p className="text-white font-sans font-bold tracking-widest uppercase">SHERATON PARSIPPANY</p>
                   </div>
                 </div>
                 {/* Venue 2 - User Image 2 */}
@@ -367,7 +367,7 @@ function App() {
           </section>
 
           {/* Contact Form Section */}
-          <section ref={contactRef} className="bg-[#84001a] py-24 px-8 flex flex-col items-center">
+          <section id="contact" ref={contactRef} className="bg-[#84001a] py-24 px-8 flex flex-col items-center">
             <div className="max-w-3xl w-full text-center mb-16">
               <h2 className="debby-script text-white text-7xl lowercase mb-6 reveal">let's create something inspired</h2>
               <div className="sketched-line w-24 mx-auto bg-white opacity-50 reveal stagger-1"></div>
@@ -430,15 +430,15 @@ function App() {
               />
             </div>
             <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 mb-12">
-              <a className="nav-link font-sans font-bold tracking-widest uppercase text-xs text-[#5a4040] hover:underline decoration-[#ab162b] underline-offset-8 transition-opacity" href="#">WEDDINGS</a>
-              <a className="nav-link font-sans font-bold tracking-widest uppercase text-xs text-[#5a4040] hover:underline decoration-[#ab162b] underline-offset-8 transition-opacity" href="#">EVENTS</a>
-              <a className="nav-link font-sans font-bold tracking-widest uppercase text-xs text-[#5a4040] hover:underline decoration-[#ab162b] underline-offset-8 transition-opacity" href="#">VENUES</a>
-              <a className="nav-link font-sans font-bold tracking-widest uppercase text-xs text-[#5a4040] hover:underline decoration-[#ab162b] underline-offset-8 transition-opacity" href="#">DINING</a>
-              <a className="nav-link font-sans font-bold tracking-widest uppercase text-xs text-[#5a4040] hover:underline decoration-[#ab162b] underline-offset-8 transition-opacity" href="#">CONTACT</a>
+              <a className="nav-link font-sans font-bold tracking-widest uppercase text-xs text-[#5a4040] hover:underline decoration-[#ab162b] underline-offset-8 transition-opacity" href="#weddings">WEDDINGS</a>
+              <a className="nav-link font-sans font-bold tracking-widest uppercase text-xs text-[#5a4040] hover:underline decoration-[#ab162b] underline-offset-8 transition-opacity" href="#events">EVENTS</a>
+              <a className="nav-link font-sans font-bold tracking-widest uppercase text-xs text-[#5a4040] hover:underline decoration-[#ab162b] underline-offset-8 transition-opacity" href="#venues">VENUES</a>
+              <a className="nav-link font-sans font-bold tracking-widest uppercase text-xs text-[#5a4040] hover:underline decoration-[#ab162b] underline-offset-8 transition-opacity" href="#dining">DINING</a>
+              <a className="nav-link font-sans font-bold tracking-widest uppercase text-xs text-[#5a4040] hover:underline decoration-[#ab162b] underline-offset-8 transition-opacity" href="#contact">CONTACT</a>
             </div>
             <div className="w-24 h-px bg-[#e2bebd]/30 mb-10"></div>
             <p className="font-body text-[#5a4040] text-sm italic mb-6">
-              © 2024 Dolce Hotels and Resorts. Member of Wyndham Rewards.
+              © 2025 Dolce Hotels and Resorts. Member of Wyndham Rewards.
             </p>
             <div className="flex items-center gap-4 opacity-70">
               <img 
