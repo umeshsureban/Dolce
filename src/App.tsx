@@ -5,6 +5,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [logoAnimating, setLogoAnimating] = useState(false);
   const [showContent, setShowContent] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   
   // Refs for scroll animations
   const whyDolceRef = useRef<HTMLDivElement>(null);
@@ -104,32 +105,47 @@ function App() {
       {showContent && (
         <div className="animate-fade-in">
           {/* Top Navigation */}
-          <nav className="bg-white/70 backdrop-blur-md shadow-[0_40px_40px_rgba(132,0,26,0.06)] fixed top-0 z-50 flex justify-between items-center w-full px-8 py-6 max-w-none">
-            <img 
-              alt="Dolce Hotels and Resorts" 
-              className="h-12 w-auto object-contain" 
-              src="/dolce-logo.png"
-            />
-            <div className="hidden md:flex gap-10 items-center">
-              <a className="nav-link active font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#84001a] border-b-2 border-[#84001a] pb-1 transition-colors duration-300" href="#weddings">
-                WEDDINGS
-              </a>
-              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#events">
-                EVENTS
-              </a>
-              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#venues">
-                VENUES
-              </a>
-              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#dining">
-                DINING
-              </a>
-              <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#contact">
-                CONTACT
-              </a>
+          <nav className="bg-white/70 backdrop-blur-md shadow-[0_40px_40px_rgba(132,0,26,0.06)] fixed top-0 z-50 w-full max-w-none">
+            <div className="flex justify-between items-center px-8 py-6">
+              <img
+                alt="Dolce Hotels and Resorts"
+                className="h-12 w-auto object-contain"
+                src="/dolce-logo.png"
+              />
+              {/* Desktop links */}
+              <div className="hidden md:flex gap-10 items-center">
+                <a className="nav-link active font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#84001a] border-b-2 border-[#84001a] pb-1 transition-colors duration-300" href="#weddings">WEDDINGS</a>
+                <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#events">EVENTS</a>
+                <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#venues">VENUES</a>
+                <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#dining">DINING</a>
+                <a className="nav-link font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040] hover:text-[#ab162b] transition-colors duration-300" href="#contact">CONTACT</a>
+              </div>
+              {/* Desktop CTA */}
+              <button className="btn-elegant hidden md:block bg-[#ab162b] text-white font-sans font-bold tracking-widest uppercase px-8 py-3 text-sm active:scale-95 duration-200">
+                BOOK NOW
+              </button>
+              {/* Hamburger button — mobile only */}
+              <button
+                className="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-[6px] focus:outline-none"
+                onClick={() => setMenuOpen(!menuOpen)}
+                aria-label="Toggle menu"
+              >
+                <span className={`block w-6 h-0.5 bg-[#84001a] transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-[7px]' : ''}`}></span>
+                <span className={`block w-6 h-0.5 bg-[#84001a] transition-all duration-300 ${menuOpen ? 'opacity-0' : ''}`}></span>
+                <span className={`block w-6 h-0.5 bg-[#84001a] transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-[7px]' : ''}`}></span>
+              </button>
             </div>
-            <button className="btn-elegant bg-[#ab162b] text-white font-sans font-bold tracking-widest uppercase px-8 py-3 text-sm active:scale-95 duration-200">
-              BOOK NOW
-            </button>
+            {/* Mobile dropdown menu */}
+            <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${menuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+              <div className="flex flex-col px-8 pb-6 gap-5 border-t border-[#e2bebd]/40 pt-4">
+                <a className="font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#84001a]" href="#weddings" onClick={() => setMenuOpen(false)}>WEDDINGS</a>
+                <a className="font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040]" href="#events" onClick={() => setMenuOpen(false)}>EVENTS</a>
+                <a className="font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040]" href="#venues" onClick={() => setMenuOpen(false)}>VENUES</a>
+                <a className="font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040]" href="#dining" onClick={() => setMenuOpen(false)}>DINING</a>
+                <a className="font-sans font-bold tracking-[0.15em] uppercase text-sm text-[#5a4040]" href="#contact" onClick={() => setMenuOpen(false)}>CONTACT</a>
+                <button className="btn-elegant bg-[#ab162b] text-white font-sans font-bold tracking-widest uppercase px-8 py-3 text-sm w-full mt-2">BOOK NOW</button>
+              </div>
+            </div>
           </nav>
 
           {/* Hero Section */}
