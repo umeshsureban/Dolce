@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
+npm install       # Install dependencies (required before first run)
 npm run dev       # Start Vite dev server with HMR
 npm run build     # TypeScript check (tsc -b) + Vite production bundle
 npm run lint      # ESLint across all files
@@ -12,6 +13,13 @@ npm run preview   # Serve the production build locally
 ```
 
 No test runner is configured.
+
+## Deployment
+
+- **Platform:** Vercel, auto-deployed on every push to `main`
+- **Repository:** github.com/umeshsureban/Dolce (remote alias: `dolce`)
+- **Config:** `vercel.json` — sets build command, output dir (`dist`), and a catch-all rewrite to `index.html` for SPA routing
+- `dist/` and `node_modules/` are excluded from git; Vercel installs and builds them itself
 
 ## Architecture
 

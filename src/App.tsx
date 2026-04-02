@@ -199,7 +199,7 @@ function App() {
               <img 
                 className="w-full h-full object-cover" 
                 alt="bridal couple in vineyard garden" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbxsjQjeFq8Ad_g4o2-eQk23a17M0K0M6SgV_ZvaTwRQMWVAM68tooBKFW8jabX9z1ECCbPinEGKZE3vBcmpm-Ed8ibNdDYRGGXOYg6BZhTNxcNTd8TzNoO9yJ9R6BUGFa8W69TH20mJWmy5HssSoTsHsQ8rxJ3-zSKvHzlAFRwe4i4loQxGAhuKtaIQCbRxKupipjTmNaTTjrRy4cyafEieYGK4zF1peo0cPme01lxPIDmcOPNoREWIimI-fLq4RKxg-JxsPGp7E"
+                src="/wedding.jpeg"
               />
               <div className="absolute top-10 right-10 w-48 h-48 doodle-circle opacity-60 animate-float"></div>
             </div>
