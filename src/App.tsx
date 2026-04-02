@@ -154,16 +154,13 @@ function App() {
               <img 
                 className="hero-parallax w-full h-full object-cover scale-110" 
                 alt="luxury wedding reception hall at sunset" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLap1XL-4X1m_sXBs9qt4uzGC3lfdvq_MGVPHHAh3oJOkaP8-eX5Zp9xEQ2CkGMD8WPo-y3pyZiPboh3a6vr6q0mNABr4qfu-RiVvt-ZcjxMRiV2seJEaHov62dBGlhEiW-1-cWOI6ix8bGXdFX639tleVCljRFiP2af5wux0QXYkc3R03U0VYvTHC2XsmOjrEfPlNbZnrdDnkFq_2oW8zQ2RfMxShXK6Tpxx6F5Ponvz0iXj2UUa6kNLCiMtRUIfsnfkF-deqQmQ"
+                src="/hero.png"
               />
               <div className="absolute inset-0 bg-black/20"></div>
             </div>
             <div className="relative z-10 text-center flex flex-col items-center max-w-4xl px-4">
-              <div className="w-64 h-64 doodle-circle flex items-center justify-center mb-[-40px] relative animate-scale-in">
-                <span className="text-white text-3xl font-black tracking-tighter uppercase">Dolce</span>
-              </div>
-              <h1 className="debby-script text-white text-7xl md:text-9xl lowercase mb-4 relative z-20 mix-blend-plus-lighter animate-fade-in-up" style={{ animationDelay: '0.3s', opacity: 0 }}>
-                the art of inspiration
+              <h1 className="debby-script text-white text-7xl md:text-9xl mb-4 relative z-20 mix-blend-plus-lighter animate-fade-in-up" style={{ animationDelay: '0.3s', opacity: 0 }}>
+                Love Becomes Legacy
               </h1>
               <p className="font-sans font-bold tracking-[0.3em] text-white uppercase text-xl mb-12 animate-fade-in-up" style={{ animationDelay: '0.5s', opacity: 0 }}>
                 WEDDINGS & EVENTS
@@ -182,8 +179,8 @@ function App() {
           {/* Brand Intro Strip */}
           <section className="bg-[#84001a] py-4 flex items-center justify-center gap-8 overflow-hidden">
             <div className="sketched-line flex-1 max-w-[200px]"></div>
-            <p className="debby-script text-white text-3xl lowercase italic reveal">
-              where every detail becomes a work of art
+            <p className="debby-script text-white text-3xl italic reveal">
+              Most Beautiful Day, Perfectly Crafted
             </p>
             <div className="sketched-line flex-1 max-w-[200px]"></div>
           </section>
@@ -221,7 +218,7 @@ function App() {
             </div>
             <div className="w-full md:w-1/2 p-12 md:p-24 flex flex-col justify-center items-start">
               <span className="font-sans font-bold tracking-widest text-[#84001a] uppercase text-xs mb-4 reveal">CELEBRATE WITH US</span>
-              <h2 className="debby-script text-[#84001a] text-7xl lowercase mb-6 reveal stagger-1">your inspired day</h2>
+              <h2 className="debby-script text-[#84001a] text-7xl mb-6 reveal stagger-1">Your inspired day</h2>
               <p className="font-body text-[#5a4040] text-lg leading-relaxed mb-10 max-w-md reveal stagger-2">
                 At Dolce, we believe a wedding is more than an event; it's a masterpiece in the making. Our dedicated artisans work tirelessly to ensure every brushstroke of your celebration is perfect.
               </p>
@@ -299,7 +296,7 @@ function App() {
             </div>
             <div className="w-full md:w-1/2 p-12 md:p-24 flex flex-col justify-center items-start">
               <span className="font-sans font-bold tracking-widest text-[#84001a] uppercase text-xs mb-4 reveal">CORPORATE EVENTS</span>
-              <h2 className="debby-script text-[#84001a] text-7xl lowercase mb-6 reveal stagger-1">inspire discovery</h2>
+              <h2 className="debby-script text-[#84001a] text-7xl mb-6 reveal stagger-1">Inspire discovery</h2>
               <p className="font-body text-[#5a4040] text-lg leading-relaxed mb-10 max-w-md reveal stagger-2">
                 Fuel innovation in environments built for breakthroughs. Our corporate spaces blend high-tech capabilities with high-touch hospitality to turn every meeting into a milestone.
               </p>
@@ -313,8 +310,8 @@ function App() {
           <section ref={testimonialRef} className="py-32 px-4 bg-[#f5f3f6] text-center flex flex-col items-center">
             <div className="sketched-line w-32 mb-12 bg-white"></div>
             <blockquote className="max-w-4xl">
-              <h2 className="debby-script text-[#84001a] text-6xl md:text-8xl lowercase leading-tight reveal">
-                "inspiration is worth sharing"
+              <h2 className="debby-script text-[#84001a] text-6xl md:text-8xl leading-tight reveal">
+                "Inspiration is worth sharing"
               </h2>
               <cite className="mt-8 block font-sans font-bold tracking-[0.2em] text-[#1b1b1e] uppercase text-sm reveal stagger-2">
                 — THE DOLCE PHILOSOPHY —
@@ -334,11 +331,11 @@ function App() {
                 <div className="group relative aspect-[4/5] overflow-hidden bg-zinc-100 card-lift reveal-scale stagger-1">
                   <img 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                    alt="Sheraton Parsippany Hotel aerial view" 
-                    src="/venue1.jpg"
+                    alt="Dolce Parsippany Hotel aerial view" 
+                    src="/Venue4.png"
                   />
                   <div className="absolute inset-0 bg-[#84001a]/0 group-hover:bg-[#84001a]/80 transition-all duration-500 flex flex-col items-center justify-center p-8 text-center opacity-0 group-hover:opacity-100">
-                    <h3 className="font-sans font-bold tracking-widest text-white uppercase text-xl mb-2">Sheraton Parsippany</h3>
+                    <h3 className="font-sans font-bold tracking-widest text-white uppercase text-xl mb-2">Dolce Parsippany</h3>
                     <p className="text-white/80 font-body text-sm mb-6">A stunning castle-like venue in New Jersey, perfect for grand celebrations.</p>
                     <button className="border border-white text-white px-6 py-2 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#84001a] transition-colors">VIEW VENUE</button>
                   </div>
@@ -347,11 +344,11 @@ function App() {
                 <div className="group relative aspect-[4/5] overflow-hidden bg-zinc-100 card-lift reveal-scale stagger-2">
                   <img 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                    alt="Sheraton Hotel aerial view with surrounding landscape" 
-                    src="/venue2.jpg"
+                    alt="Dolce Hotel aerial view with surrounding landscape" 
+                    src="/Venue5.png"
                   />
                   <div className="absolute inset-0 bg-[#84001a]/0 group-hover:bg-[#84001a]/80 transition-all duration-500 flex flex-col items-center justify-center p-8 text-center opacity-0 group-hover:opacity-100">
-                    <h3 className="font-sans font-bold tracking-widest text-white uppercase text-xl mb-2">Sheraton Grand</h3>
+                    <h3 className="font-sans font-bold tracking-widest text-white uppercase text-xl mb-2">Dolce Grand</h3>
                     <p className="text-white/80 font-body text-sm mb-6">An iconic destination surrounded by beautiful landscapes and modern amenities.</p>
                     <button className="border border-white text-white px-6 py-2 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#84001a] transition-colors">VIEW VENUE</button>
                   </div>
@@ -360,11 +357,11 @@ function App() {
                 <div className="group relative aspect-[4/5] overflow-hidden bg-zinc-100 card-lift reveal-scale stagger-3">
                   <img 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                    alt="Sheraton Hotel aerial view with parking and grounds" 
-                    src="/venue3.jpg"
+                    alt="Dolce Hotel aerial view with parking and grounds" 
+                    src="/Venue6.jpeg"
                   />
                   <div className="absolute inset-0 bg-[#84001a]/0 group-hover:bg-[#84001a]/80 transition-all duration-500 flex flex-col items-center justify-center p-8 text-center opacity-0 group-hover:opacity-100">
-                    <h3 className="font-sans font-bold tracking-widest text-white uppercase text-xl mb-2">Sheraton Premiere</h3>
+                    <h3 className="font-sans font-bold tracking-widest text-white uppercase text-xl mb-2">Dolce Premiere</h3>
                     <p className="text-white/80 font-body text-sm mb-6">A contemporary venue with expansive grounds for unforgettable events.</p>
                     <button className="border border-white text-white px-6 py-2 text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-[#84001a] transition-colors">VIEW VENUE</button>
                   </div>
